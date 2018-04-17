@@ -8,6 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
+import Config.twitter.Configuration;
+
 /**
  * @author Tester
  *
@@ -24,15 +26,15 @@ public class EditProfileInfo {
 	
 	
 	
-	@FindBy(how= How.XPATH,using=".//*[@id='page-container']/div[3]/div/div[1]/div[4]/div[1]/div[2]/div[5]/button")
+	@FindBy(xpath=Configuration.picIcon)
 	
 	public WebElement picIcon;
 	
-	@FindBy(how=How.XPATH, using=".//*[@id='photo-choose-existing']/div/div/label/input")
+	@FindBy(xpath=Configuration.changePic)
 	
 	public WebElement changePic;
 	
-	@FindBy(how=How.XPATH, using=".//*[@id='profile_image_upload_dialog-dialog']/div[2]/div[3]/button[4]")
+	@FindBy(xpath=Configuration.uploadPic)
 	public WebElement UploadPic;
 	
 	

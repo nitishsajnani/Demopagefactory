@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import Config.twitter.Configuration;
+
 /**
  * @author Tester
  *
@@ -23,7 +25,7 @@ public class MyProfilePage {
 		
 		
 	}
-	@FindBy(how= How.XPATH,using=".//*[@id='page-container']/div[3]/div/div[2]/div[2]/div/div[2]/div/div/ul/li[8]/div/button")
+	@FindBy(xpath=Configuration.Edit)
 	
 	public WebElement Edit;
 	

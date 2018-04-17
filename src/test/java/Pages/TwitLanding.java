@@ -9,6 +9,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import Config.twitter.Configuration;
+
 /**
  * @author Tester
  *
@@ -25,15 +27,15 @@ public class TwitLanding {
 		
 		this.driver= driver;
 	}
-@FindBy(how= How.XPATH, using=".//*[@id='page-container']/div[1]/div[1]/div/div[1]/div/a")
+@FindBy(xpath=Configuration.profile)
 public WebElement profile;
-@FindBy(how= How.XPATH, using=".//*[@id='global-new-tweet-button']")
+@FindBy(xpath=Configuration.tweet)
 public WebElement tweet;
 
-@FindBy(how= How.XPATH, using=".//*[@id='page-container']/div[1]/div[1]/div/div[2]/ul/li[3]/a/span[1]")
+@FindBy(xpath=Configuration.Followers)
 public WebElement Followers;
 
-@FindBy(how= How.XPATH, using=".//*[@id='page-container']/div[1]/div[1]/div/div[2]/ul/li[2]/a/span[1]")
+@FindBy(xpath=Configuration.Following)
 public WebElement Following;
 public MyProfilePage GotoProfile()
 
